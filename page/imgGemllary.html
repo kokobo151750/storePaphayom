@@ -1,0 +1,115 @@
+<!-- img gallory -->
+<div class="container-img">
+    <div class="mySlides">
+        <div class="numbertext">1 / 7</div>
+        <img src="https://www.chillpainai.com/src/wewakeup/scoop/images/3ddf2daa8fd6691e6ae5c1a77137e1976540a359.jpg"
+            style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 7</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj9D3WyR9Pi62Sqe45fZ2zM-hjd50ULSBgbA&s"
+            style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 7</div>
+        <img src="https://www.parentsone.com/wp-content/uploads/2020/12/review-chao-chon-cover-01.jpg"
+            style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 7</div>
+        <img src="https://chillpainai.com/storage/scoop/15845/1200x800.jpg" style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 7</div>
+        <img src="https://cms.dmpcdn.com/food/2023/03/15/b58664e0-c2e0-11ed-add0-01b3b1144370_webp_original.jpg"
+            style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 7</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHK92Pm_-9k6oQgUz0jSydvhUC7Nk4frE9Q&s"
+            style="width:100%; ">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">7 / 7</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHK92Pm_-9k6oQgUz0jSydvhUC7Nk4frE9Q&s"
+            style="width:100%; ">
+    </div>
+
+    <a class="prev_img" onclick="plusSlides(-1)">❮</a>
+    <a class="next_img" onclick="plusSlides(1)">❯</a>
+
+    <div class="row_scroll">
+        <div class="row_img">
+            <div class="imgSize" onclick="currentSlide(1)">
+                <img class="demo_img cursor_img"
+                    src="https://www.chillpainai.com/src/wewakeup/scoop/images/3ddf2daa8fd6691e6ae5c1a77137e1976540a359.jpg"
+                    alt="img" style=" height: 100%;">
+            </div>
+            <div class="imgSize" onclick="currentSlide(2)">
+                <img class="demo_img cursor_img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj9D3WyR9Pi62Sqe45fZ2zM-hjd50ULSBgbA&s"
+                    alt="img" style=" height: 100%;">
+            </div>
+            <div class="imgSize" onclick="currentSlide(3)">
+                <img class="demo_img cursor_img"
+                    src="https://www.parentsone.com/wp-content/uploads/2020/12/review-chao-chon-cover-01.jpg" alt="img"
+                    style=" height: 100%;">
+            </div>
+            <div class="imgSize" onclick="currentSlide(4)">
+                <img class="demo_img cursor_img" src="https://chillpainai.com/storage/scoop/15845/1200x800.jpg"
+                    alt="img" style=" height: 100%;">
+            </div>
+            <div class="imgSize" onclick="currentSlide(5)">
+                <img class="demo_img cursor_img"
+                    src="https://cms.dmpcdn.com/food/2023/03/15/b58664e0-c2e0-11ed-add0-01b3b1144370_webp_original.jpg"
+                    alt="img" style=" height: 100%;">
+            </div>
+            <div class="imgSize" onclick="currentSlide(6)">
+                <img class="demo_img cursor_img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHK92Pm_-9k6oQgUz0jSydvhUC7Nk4frE9Q&s"
+                    alt="img" style=" height: 100%;">
+            </div>
+            <div class="imgSize" onclick="currentSlide(7)">
+                <img class="demo_img cursor_img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHK92Pm_-9k6oQgUz0jSydvhUC7Nk4frE9Q&s"
+                    alt="img" style=" height: 100%;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo_img");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activeimg", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " activeimg";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>

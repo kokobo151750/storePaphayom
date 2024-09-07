@@ -1,0 +1,71 @@
+body .ng-scope {
+    overflow-y: visible;
+}
+
+section {
+    overflow: visible;
+}
+
+.card_custom {
+    background-color: white;
+    overflow: visible;
+    margin-top: 85px;
+}
+
+.gradient-custom-2 {
+    background: #fccb90;
+    background-image: linear-gradient(to right, #ec003e, #f00243, #f30447, #f7074c, #fa0a51, #f81354, #f71a58, #f5205b, #ee295d, #e72f60, #df3561, #d83a63);
+    overflow: visible;
+}
+
+.text-center {
+    width: 100%;
+
+    .btn-denger {
+        width: 100%;
+         background-image: linear-gradient(to right, #ec003e, #f00243, #f30447, #f7074c, #fa0a51, #f81354, #f71a58, #f5205b, #ee295d, #e72f60, #df3561, #d83a63);
+        color: white;
+        font-weight: bold;
+        border: none;
+        height: 40px;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-denger:hover {
+        background-image: linear-gradient(to right, #ee285c, #ef3163, #ef396a, #ef4171, #ef4878, #ee517e, #ee5983, #ed6189, #ec6c8f, #eb7696, #ea809c, #e989a2);
+     }
+}
+
+.form-check-input:checked {
+    background-color: red;
+    border-color: red;
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+        position: relative;
+        top: -70px;
+        overflow: visible;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        overflow: visible;
+    }
+
+    .col-xl-10 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .card-body {
+        margin: 50px;
+    }
+}

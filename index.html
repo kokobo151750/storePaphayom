@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซด์รีวิวร้านค้าป่าพะยอม</title>
+
+    <!-- Link Boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Link Font Aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custonBoostrap5.css">
+    <link rel="stylesheet" href="assets/css/GellaryImg.css">
+
+    <!--Angular Js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+    <!-- โหลดเว็บ -->
+    <div id="preloader">
+        <div class="d-lg-block">
+            <div>
+                <img src="assets/img/logo.png" alt="img" width="100px" height="100px">
+            </div>
+            <div class="spinner-border text-danger spinnerdivcenter" role="status">
+                <div class="visually-hidden">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-turn-up"></i></button>
+    <div class="lazy-content-banner sticky-top container-sm nav_center">
+        <div ng-include="'page/navbar.html'"></div>
+    </div>
+
+    <!-- Banner -->
+    <header class="lazy-content-banner">
+        <section class="container-sm lazy-content-banner">
+            <br><br><br><br><br>
+            <h1 class="fw-bolder ">เว็บไซด์รีวิวร้านค้าป่าพะยอม</h1>
+        </section>
+        <section class="crad_flex_scroll lazy-content-banner">
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+            <!-- ป้ายเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div style="width: 40px;">
+                <div class="card_status card_status_green">เปิด</div>
+            </div>
+            <!-- การ์ดเปลี่ยนสถานะ ร้านเปิดปิด -->
+            <div class="card card_green" style="width: 18rem;">
+                <div class="card_img_hover">
+                    <img src="https://media.readthecloud.co/wp-content/uploads/2020/09/29205229/thai-grocery-17.jpg"
+                        class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                </div>
+                <div class="card-body overflow-auto scroll_disable">
+
+                    <!-- แสดงข้อมูลชื่อร้าน -->
+                    <h5 class="card-title"><b style="color: red;">ร้าน:</b> <b>ขายของชำ</b></h5>
+                    <!-- แสดงรายละเอียดร้านเท่านั้น -->
+                    <p class="card-text">e and make up the bulk of the Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Error magni, culpa nisi recusandae quia sed similique quae voluptates ratione. Distinctio
+                        fugit ipsum quaerat sint mollitia, enim fuga a ratione dolores.
+                        card's content.</p>
+                </div>
+                <!-- ปุ่มดูเพิ่มเติม กับ หมุด -->
+                <div class="card-footer ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger me-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-eye me-1"></i>
+                        ดูเพิ่มเติม
+                    </button>
+                    <!-- Modal -->
+                    <span ng-include="'page/modalCard.html'"></span>
+
+                    <a href="https://maps.app.goo.gl/5aM9X9xGAyxcedsh6" target="_blank"
+                        class="btn btn-outline-danger"><i class="fa-solid fa-location-dot me-1"></i>หมุด</a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="statusStore mt-4 lazy-content-banner">
+            <h1>สถานะร้านค้า</h1>
+        </section>
+    </header>
+
+    <div class="linener lazy-content"></div>
+
+    <!-- รายละเอียกเว็บไซด์ -->
+    <div class="container-sm lazy-content">
+        <div class="details">รายละเอียดเว็บไซด์</div>
+        <div class="navbar navbar_list_details">
+            <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                <a class="navbar_widthDetails list-group-item list-group-item-action active navbar_redian"
+                    id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab"
+                    aria-controls="list-home"><i class="fa-brands fa-telegram me-1"></i>บริการทางเรา</a>
+                <a class="navbar_widthDetails list-group-item list-group-item-action" id="list-profile-list"
+                    data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i
+                        class="fa-solid fa-file-invoice me-1"></i>ความน่าเชื่อถือ</a>
+                <a class="navbar_widthDetails list-group-item list-group-item-action" id="list-messages-list"
+                    data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i
+                        class="fa-solid fa-users me-1"></i>ทีมผู้พัฒนา</a>
+                <a class="navbar_widthDetails list-group-item list-group-item-action navbar_redian_rigth"
+                    id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab"
+                    aria-controls="list-settings"><i class="fa-solid fa-notes-medical me-1"></i>สนับสนุนเรา</a>
+            </div>
+        </div>
+    </div>
+    <section class="websiteDetails lazy-content mt-5">     
+        <div class="navbarDetails lazy-content ">
+            <div class="mt-3">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        <div class="container-xl  service_display">
+                            <div class="service lazy-content">
+                                <h1>
+                                    รับรีวิวร้านค้าต่าง ๆ<br>
+                                    ในอำเภอป่าพะยอม
+                                </h1>
+                                <img src="assets/img/1.png" alt="img" width="207" height="207">
+                                <p>
+                                    ทางเรารับรีวิวร้านค้าในอำเภอป่าพะยอม จังหวัดพัทลุงเท่านั้น
+                                    เพียงแค่ติดต่อทางเรามาแล้วท่านจะเติบโตในหน้าที่การงานครับ
+
+                                </p>
+                            </div>
+                            <div class="service lazy-content">
+                                <h1><br>แก้ไขปัญหาต่าง ๆ</h1>
+                                <img src="assets/img/2.png" alt="logo" width="207" height="207">
+                                <p>
+                                <ul>
+                                    <li><i class="fa-solid fa-arrow-right me-1"></i>ลูกค้าไม่รู้จักรร้านค้า</li>
+                                    <li><i class="fa-solid fa-arrow-right me-1"></i>ร้านค้าใหม่ไม่มีลูกค้า</li>
+                                    <li><i class="fa-solid fa-arrow-right me-1"></i>สนับสนุนเศรษกิจในตำบล</li>
+                                    <li><i class="fa-solid fa-arrow-right me-1"></i>สร้างฐานลูกค้าให้ร้านค้า</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="service lazy-content">
+                                <h1>สอบถามข้อมูล</h1>
+                                <img src="assets/img/3.png" alt="logo" width="207" height="207">
+                                <p>
+                                    สอบถามข้อมูลเพิ่มเติมได้ที่
+                                    เพจเฟสบุ๊ค: รับเขียนโปรแกรม
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="container-xl  service_display">
+
+                            <div class="service">
+
+                            </div>
+
+                            <div class="service ">
+                                <h1>
+                                    เก็บข้อมูลถูกต้องตามหลัก พ.ร.บ PDPA
+                                </h1>
+                                <img src="assets/img/PDPA.png" alt="img" width="280px">
+                                <p>
+                                    <br>
+                                    ทางเราเก็บข้อมูลถูกต้องตามหลัก PDPA พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล พ.ศ.2562
+                                </p>
+                            </div>
+                            <div class="service ">
+
+                            </div>
+                            <div class="service " style="position: relative; top: 20px;">
+                                <h1>การขออนุญาติเผยแผ่ข้อมูล</h1>
+                                <img src="assets/img/5.png" alt="logo" width="207" height="207">
+                                <p>
+                                    ทางเราได้รับอนุญาติจากเจ้าของร้านหรือกิจการ ในการเปิดเผยข้อมูลต่าง ๆ
+                                    ของร้านค้าที่มารีวิวกับเรา
+                                </p>
+                            </div>
+
+                            <div class="service">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class=" container_display_card_developer">
+                            <div class="card_Developer">
+                                <div class="card_Developer_img">
+                                    <img src="assets/img/developer/aphisit.jpg" alt="img">
+                                </div>
+                                <div class="card_Developer_body">
+                                    <h6>Mr. อภิษิฐน์ มะสมัน</h6>
+                                    <p>
+                                    <table>
+                                        <tr>
+                                            <th style="width: 300px;">ตำแหน่ง</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>Front-End Developer</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ติดต่อ</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>095-506-5218</td>
+                                        </tr>
+                                        <tr>
+                                            <th>อีเมล์</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>aphisit151750@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th >สถานศึกษา</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>มหาวิทยาลัยทักษิณ พัทลุง</td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <b>รายละเอียด : </b>ทำงานเกี่ยวกับ UX/UI Design
+                                        ทำหน้าที่ออกแบบหน้าเว็บไซด์ให้มีความสวยงาม และใช้งานง่าย
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card_Developer">
+                                <div class="card_Developer_img">
+                                    <img src="assets/img/developer" alt="img">
+                                </div>
+                                <div class="card_Developer_body">
+                                    <h6>Mr. อานนท์ ศรีรัฐ</h6>
+                                    <p>
+                                    <table>
+                                        <tr>
+                                            <th>ตำแหน่ง</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>Back-End Developer</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ติดต่อ</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>061-158-0131</td>
+                                        </tr>
+                                        <tr>
+                                            <th>อีเมล์</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>สถานศึกษา</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>มหาวิทยาลัยทักษิณ พัทลุง</td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <b>รายละเอียด : </b>ทำงานเกี่ยวกับเบื้องหลังของส่วนต่าง ๆ ในเว็บไซด์
+                                        โดยมีหน้าที่จัดการข้อมูล และออกแบบระบบหลังบ้านของเว็บไซด์
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card_Developer">
+                                <div class="card_Developer_img">
+                                    <img src="" alt="img">
+                                </div>
+                                <div class="card_Developer_body">
+                                    <h6>Mr. กิจตินนท์ ชุมบุญ</h6>
+                                    <p>
+                                    <table>
+                                        <tr>
+                                            <th>ตำแหน่ง</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>Design logo</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ติดต่อ</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>066-020-4256</td>
+                                        </tr>
+                                        <tr>
+                                            <th>อีเมล์</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>สถานศึกษา</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>มหาวิทยาลัยทักษิณ พัทลุง</td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <b>รายละเอียด : </b>ทำงานเกี่ยวกับการแบบโลโก้ของเว็บไซด์ให้ดูทันสมัย
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card_Developer">
+                                <div class="card_Developer_img">
+                                    <img src="assets/img/developer/ford.jpg" alt="img">
+                                </div>
+                                <div class="card_Developer_body">
+                                    <h6>Mr. วรพล บัวแก้ว</h6>
+                                    <p>
+                                    <table>
+                                        <tr>
+                                            <th>ตำแหน่ง</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>Design Banner</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ติดต่อ</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>096-316-4544</td>
+                                        </tr>
+                                        <tr>
+                                            <th>อีเมล์</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>Worraponbuakaeo267@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>สถานศึกษา</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>มหาวิทยาลัยทักษิณ พัทลุง</td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <b>รายละเอียด : </b>ทำงานเกี่ยวกับการแบบ Banner ของเว็บไซด์ให้มีความสวยงาม
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card_Developer">
+                                <div class="card_Developer_img">
+                                    <img src="" alt="img">
+                                </div>
+                                <div class="card_Developer_body">
+                                    <h6>Mr. วรพล บัวแก้ว</h6>
+                                    <p>
+                                    <table>
+                                        <tr>
+                                            <th>ตำแหน่ง</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>Design Banner</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ติดต่อ</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>096-316-4544</td>
+                                        </tr>
+                                        <tr>
+                                            <th>อีเมล์</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>สถานศึกษา</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>มหาวิทยาลัยทักษิณ พัทลุง</td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <b>รายละเอียด : </b>ทำงานเกี่ยวกับการแบบ Banner ของเว็บไซด์ให้มีความสวยงาม
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card_Developer">
+                                <div class="card_Developer_img">
+                                    <img src="assets/img/developer/atitayakorn.jpg" alt="img">
+                                </div>
+                                <div class="card_Developer_body">
+                                    <h6>Mr. อทิยากร ตุตะเวช</h6>
+                                    <p>
+                                    <table>
+                                        <tr>
+                                            <th>ตำแหน่ง</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>Design Banner</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ติดต่อ</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>063-582-1154</td>
+                                        </tr>
+                                        <tr>
+                                            <th>อีเมล์</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>athiyakornnt2005@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>สถานศึกษา</th>
+                                            <th style="text-align: center; width: 10px;">:</th>
+                                            <td>มหาวิทยาลัยทักษิณ พัทลุง</td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <b>รายละเอียด : </b>ทำงานเกี่ยวกับการเก็บข้อมูลลูกค้าที่จะมาให้ทางเรารีวิวร้านค้าต่าง ๆ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="card_support_developer">
+                            <div class="sleeppay_img">
+                                <img src="assets/img/promtpay.png" alt="รูป">
+                            </div>
+                            <div class="sleeppay_details">
+                                <h3><b>ขอขอบคุณที่คอยสนับสนุนทางเราครับ</b></h3>
+                                <p>
+                                    <b>ท่านสามาถสนับสนุนเราได้ที่บัญชีนี้ได้เลยครับ</b><br>
+
+                                    <b>บัญชี Kbangk : </b>165-2-95056-2 <br>
+                                    <b>ชื่อ-สกุล : </b>อภิษิฐ์ มะสมัน <br>
+                                    <hr>
+                                    <b>รายละเอียด : </b>ทางเราจะนำเงินที่ท่านได้สนับสนุนเราไปพัฒนา
+                                    เว็บไซด์ หรือพัฒนางานให้มีคุณภาพต่อไปครับ ขอขอบคุณเป็น
+                                    อย่างยิ่งครับ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="linener lazy-content"></div>
+
+    <!-- ส่วนติดต่อ -->
+    <footer class="footer_details lazy-content">
+            <section class="footer_logo_details lazy-content">
+                <img src="assets/img/logo.png" alt="img">
+                <h3>เว็บไซต์รีวิว<br>ร้านค้า<br>ป่าพะยอม</h3>
+            </section>
+            <section class="footer_contact_developer lazy-content">
+                <h5>ติดต่อทีมผู้พัฒนา</h5>
+                <div class="location_footer">
+                    <div class="icons_footer">
+                        <i class="fa-solid fa-house"></i>
+                        <br><br><br>
+                        <i class="fa-solid fa-envelope"></i><br>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="location">
+                        <p>
+                            มหาวิทยาลัยทักษิณ ว.พัทลุง ห.พะยอม4,
+                            เลขที่ 222, หมู่ที่ 2, ต.บ้านพร้าว, อ.ป่าพะยอม
+                            จ.พัทลุง, 93210
+                            <br>
+                            kokobo151750@gmail.com
+                            <br>
+                            66+092-506-5218
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="footer_contact_socails lazy-content">
+                <h5>ติดต่อตามสื่อโซเชียว</h5>
+                <div class="icon_contact_socails">
+                    <div class="icon_list facebook">
+                        <a href="https://www.facebook.com/profile.php?id=61564981023727" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </section>
+    </footer>
+
+    <!-- Link ScriptJS -->
+    <script src="assets/js/preloder.js"></script>
+    <script src="assets/js/loadDelayWeb.js"></script>
+    <script src="assets/js/navMenu.js"></script>
+    <script src="assets/js/scrollToTopWeb.js"></script>
+    <script src="assets/js/cardScroll.js"></script>
+    <script src="assets/js/actionAngular.js"></script>
+</body>
+
+</html>
